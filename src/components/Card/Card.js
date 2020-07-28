@@ -16,8 +16,9 @@ const useStyles = makeStyles({
     borderRadius:0,
     marginBottom:'30px',
 
-    '@media screen and (max-width: 669px)': {
-      maxWidth:'100%'
+    '@media screen and (max-width: 768px)': {
+      maxWidth:'100%',
+      margin:'5px 0px'
     }
   },
   media: {
@@ -50,12 +51,11 @@ export default function MediaCard() {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography className={classes.textTitle} gutterBottom variant="h5" component="h2">
+          {/* <Typography className={classes.textTitle} gutterBottom variant="h5" component="h2">
             Lizard
-          </Typography>
+          </Typography> */}
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            Lizards are a widespread group of squamate reptiles
           </Typography>
         </CardContent>
       </CardActionArea>
