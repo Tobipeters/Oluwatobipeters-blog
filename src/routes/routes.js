@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const mainRoutes = () =>{
     return(
@@ -13,4 +16,4 @@ const mainRoutes = () =>{
     )
 }
 
-export default mainRoutes
+export default mainRoutes;
